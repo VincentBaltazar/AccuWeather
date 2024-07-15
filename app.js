@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function get12hours(locationKey) {
-        const url = `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}?apikey=${apiKey}&details=true`;
+        const url = `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}?apikey=${apiKey}&metric=true`;
     
         fetch(url)
             .then(response => response.json())
